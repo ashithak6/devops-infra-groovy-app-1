@@ -40,5 +40,5 @@ stage('Docker Build') {
  } else {
  bat(/"${mvnHome}\bin\mvn" spring-boot:build-image/)
  }
-
+}
 }
