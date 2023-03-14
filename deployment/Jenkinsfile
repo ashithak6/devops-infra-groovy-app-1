@@ -53,7 +53,8 @@ stage('Load Docker Image'){
 if(isUnix()){
 sh "minikube image load ashithak6/app-products-infra"
 } else{
-bat(/minikube image load ashithak6/app-products-infra/)
+bat("minikube image load ashithak6/app-products-infra")
+}
 }
 stage('Kubernetes Pod'){
 if(isUnix()){
