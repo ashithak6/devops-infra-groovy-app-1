@@ -21,10 +21,6 @@ spec:
       - name: app-products-infra
         image: ashithak6/app-products-infra
         imagePullPolicy: IfNotPresent
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
         ports:
         - containerPort: 8888
 
