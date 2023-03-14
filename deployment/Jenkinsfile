@@ -60,7 +60,7 @@ stage('Kubernetes Pod'){
 if(isUnix()){
 sh "kubectl apply -f k8s/deployment.yml"
 } else{
-bat(kubectl apply -f k8s/deployment.yml)
+bat("kubectl apply -f k8s/deployment.yml")
 }
 }
 stage('Kubernetes Service'){
